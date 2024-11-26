@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Guessing Game</h1>
+    </header>
+    <main>
+        <p>There are two dice, each with 6 face sides. The maximum output can be 12, the minimum can be 0.</p>
+        <p>You need to guess if the output will be under, equal to, or over 7.</p>
+        <input id="cash" type="number" placeholder="Enter your bet">
+        <button onclick="roll()">Roll the dice</button>
+        <div>
+            <button onclick="guess('under')">Under 7</button>
+            <button onclick="guess('equal')">Equal to 7</button>
+            <button onclick="guess('over')">Over 7</button>
+        </div>
+        <span id="message">: Output</span>
+        <span id="out">: Earnings</span>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
